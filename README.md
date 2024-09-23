@@ -1,0 +1,1 @@
+# .putty_simple
