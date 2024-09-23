@@ -30,3 +30,8 @@ change this to whatever... *plink.exe* for example.
 
 *plink.exe* however, does not give support for the arrow keys, the <br />
 escape key, nor the function keys, but in return acts more like an interactive session.
+
+If you want to add a data handler for different connection protocols or a saved session list <br />
+thats up to you. I couldn't find a way to make it work (taking all the user input) without <br />
+making a mess of a code, so I decided not to. <br />
+Aka. I did not complete the TODO list of my previous version.
