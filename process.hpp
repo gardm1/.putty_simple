@@ -163,6 +163,10 @@ namespace prcs {
 		DWORD ReplySize = 0;
 
 		ipaddr = inet_addr(argv);
+		if (ipaddr == INADDR_NONE) {
+        		printf("Invalid Ip address\n");
+        		return 1;
+    		}
 
 		hIcmpFile = IcmpCreateFile();
 		if (hIcmpFile == INVALID_HANDLE_VALUE) {
