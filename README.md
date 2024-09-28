@@ -31,7 +31,19 @@ change this to whatever... *plink.exe* for example.
 *plink.exe* however, does not give support for the arrow keys, the <br />
 escape key, nor the function keys, but in return acts more like an interactive session.
 
+___
+
+I thought about adding saved sessions from inside the code, and then encrypt and lock them <br />
+in memory, but could not figure out how the password (used to access and decrypt the <br />
+saved sessions) could be safely stored in memory without it itself, being accessable. <br />
+Something I just thought of could be to store the password in a loop where it is built <br />
+at compile time using modulus operators and other math things, but I am not sure what it <br />
+would look like in memory (if the compiler allready did all the math things and just left <br />
+the password as a complete string). 
+
 If you want to add a data handler for different connection protocols or a saved session list <br />
-thats up to you. I couldn't find a way to make it work (taking all the user input) without <br />
-making a mess of a code, so I decided not to. <br />
+thats up to you. Either make a seperate file where the sessions are stored, or hard-code them <br />
+into the source code. A simple way of doing this is to just add a switch statement where the <br />
+sessions are stored.
+
 Aka. I did not complete the TODO list of my previous version.
